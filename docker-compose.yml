@@ -7,10 +7,10 @@ version: '3.4'
 networks:
   api:
     external:
-      name: api.reaction.localhost
-  auth.reaction.localhost:
+      name: api.reaction.18.219.58.136
+  auth.reaction.18.219.58.136:
     external:
-      name: auth.reaction.localhost
+      name: auth.reaction.18.219.58.136
 
 services:
   web:
@@ -21,7 +21,7 @@ services:
       api:
         aliases:
           - storefront
-      auth.reaction.localhost:
+      auth.reaction.18.219.58.136:
     ports:
       - 4000:4000
     volumes:
